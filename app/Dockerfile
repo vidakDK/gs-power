@@ -1,4 +1,4 @@
-# pull official base image
+# pull official Python image (not using Alpine coz it's hard to build scipy :D
 FROM python:3.7.5
 
 # set work directory
@@ -18,4 +18,4 @@ COPY . /usr/src/app
 
 # run gunicorn server - uncomment if we don't want to use docker-compose
 # EXPOSE 8000
-# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app.api:app"]
+# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "api:app"]
