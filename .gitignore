@@ -1,0 +1,71 @@
+### build stuff
+
+__pycache__
+*.py[cod]
+*.so
+*.$py.class
+*.whl
+*.egg
+*.egg-info
+build
+dist
+asset.stamps
+.pulled
+.docker-found
+.python-version
+
+# local venvs
+venv
+.venv
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+### docker
+docker/*.requires
+docker/app.build.conf
+
+
+### node / js
+yarn.lock
+package.json
+package-lock.json
+node_modules
+
+
+### test stuff
+core
+.tox
+.*cache
+.coverage*
+_coverage
+coverage.xml
+pytest.xml
+
+
+### Editor shit
+
+#Vim
+.*.sw?
+.sw?
+
+# Sublime Text
+*.sublime-*
+
+#gedit
+*~
+
+# Mac specifics
+.DS_Store
+
+# Eclipse
+.project
+.pydevproject
+
+# PyCharm
+.idea
+
+# VSCode
+.vscode
