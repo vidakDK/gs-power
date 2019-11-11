@@ -2,7 +2,7 @@
 
 import falcon as _falcon
 
-from . import _network
+from .. import network as _network
 
 
 class LoadResource:
