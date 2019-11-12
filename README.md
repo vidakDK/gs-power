@@ -17,7 +17,7 @@ http://0.0.0.0:8000/api/generator
 ## Tests
 To run tests locally:
 ```
-pip install -r power_net/requirements.txt
+pip install -r power_net/requirements.txt -r power_net/requirements-testing.txt
 pytest power_net
 ```
 ## Notes
@@ -29,6 +29,7 @@ need to manually build all the C libraries.
 ## Future Improvements
 
 1. Add Postgres database to store network parameters and information.
+1. Switch from `pip requirements` to `setuptools` and building a wheel.
 1. Add PUT/POST requests functionality to allow users to edit the network.
 1. NGINX server for production environments.
 1. Integration tests with local HTTP server and local DB using `pytest-docker`.
