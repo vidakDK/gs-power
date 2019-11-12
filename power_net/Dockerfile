@@ -1,5 +1,6 @@
 # pull official Python image (not using Alpine coz it's hard to build scipy :D
 FROM python:3.7.5
+LABEL maintainer="vidakdk@gmail.com"
 
 # set work directory
 WORKDIR /usr/src/app

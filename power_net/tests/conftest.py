@@ -1,5 +1,5 @@
 """
-Fixtures for Pytest
+Fixtures for pytest
 ~~~~~~~~~~~~~~~~~~~
 """
 
