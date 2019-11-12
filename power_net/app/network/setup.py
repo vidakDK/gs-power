@@ -57,6 +57,28 @@ class PowerNetwork:
         """
         return self._net.res_sgen.to_json()
 
+    def set_load_params(self, p_mw: float, q_mvar: float) -> None:
+        """
+        Set parameters for the load element in the network and re-run the power flow.
 
-# Initialize at import level given that the network is static and we run the power flow once.
+        Args:
+            p_mw: active power
+            q_mvar: reactive power
+        """
+        self._net.load.p_mw = p_mw
+        self._net.load.q_mvar = q_mvar
+        _pp.runpp(self._net)
+
+    def set_generator_params(self, p_mw: float) -> None:
+        """
+        Set parameters for the generator element in the network and re-run the power flow.
+
+        Args:
+            p_mw: active power
+        """
+        self._net.load.p_mw = p_mw
+        _pp.runpp(self._net)
+
+
+# Initialize at import level given that the network is static and we run the power flow at initialization.
 net = PowerNetwork()
