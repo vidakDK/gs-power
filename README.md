@@ -5,8 +5,8 @@
 1. Build Docker container and run it: `docker-compose up`
 1. Access API endpoints:
 ```
-0.0.0.0:8000/load
-0.0.0.0:8000/generator
+http://0.0.0.0:8000/api/load
+http://0.0.0.0:8000/api/generator
 ```
 
 ## Notes
