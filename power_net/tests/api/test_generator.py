@@ -7,7 +7,7 @@ import json as _json
 import pytest as _pytest
 
 from power_net.app.api import _resources
-from .. import _util as _test
+from power_net.tests import _util as _test
 
 MOCKIT = _resources
 

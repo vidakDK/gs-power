@@ -40,6 +40,10 @@ pytest power_net
 - Used full Python Docker image instead of Alpine because building `numpy`, 
 `scipy`, `matplotlib`, `numba`, `pandas` is time-consuming with Alpine, as we 
 need to manually build all the C libraries.
+- Added `docker-compose` instead of just a Dockerfile, even though currently
+there is only the app container, but in the future we might want to add stuff
+like databases, Redis, etc., so we have `docker-compose` to make this
+easier.
 
 ## TODOs
 

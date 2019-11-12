@@ -9,7 +9,7 @@ from falcon import testing as _testing
 
 from power_net.app.api import server as _server
 from power_net.app.api import _resources
-from .. import _util as _test
+from power_net.tests import _util as _test
 
 MOCKIT = _resources
 

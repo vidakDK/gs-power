@@ -76,7 +76,7 @@ class PowerNetwork:
         Args:
             p_mw: active power
         """
-        self._net.load.p_mw = p_mw
+        self._net.sgen.p_mw = p_mw
         _pp.runpp(self._net)
 
 
